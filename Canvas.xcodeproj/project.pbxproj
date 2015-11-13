@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		835AE99F1BF57FCA008FB267 /* ClassDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835AE99D1BF57FCA008FB267 /* ClassDemoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835AE9A01BF57FCA008FB267 /* ClassDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835AE99E1BF57FCA008FB267 /* ClassDemoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		835AE9A41BF59722008FB267 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835AE9A21BF59722008FB267 /* TabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835AE9A51BF59722008FB267 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835AE9A31BF59722008FB267 /* TabBarViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		835AE9A91BF59895008FB267 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835AE9A71BF59895008FB267 /* YellowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835AE9AA1BF59895008FB267 /* YellowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835AE9A81BF59895008FB267 /* YellowViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		835AE9AE1BF598A6008FB267 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835AE9AC1BF598A6008FB267 /* RedViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835AE9AF1BF598A6008FB267 /* RedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835AE9AD1BF598A6008FB267 /* RedViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		835AE9B31BF598B7008FB267 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835AE9B11BF598B7008FB267 /* BlueViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835AE9B41BF598B7008FB267 /* BlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835AE9B21BF598B7008FB267 /* BlueViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		83A070821BF54DA60041423D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A070811BF54DA60041423D /* main.m */; };
 		83A070851BF54DA60041423D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A070841BF54DA60041423D /* AppDelegate.m */; };
 		83A0708D1BF54DA60041423D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A0708C1BF54DA60041423D /* Assets.xcassets */; };
@@ -16,6 +26,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		835AE99C1BF57FCA008FB267 /* ClassDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassDemoViewController.h; sourceTree = "<group>"; };
+		835AE99D1BF57FCA008FB267 /* ClassDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassDemoViewController.m; sourceTree = "<group>"; };
+		835AE99E1BF57FCA008FB267 /* ClassDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassDemoViewController.xib; sourceTree = "<group>"; };
+		835AE9A11BF59722008FB267 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		835AE9A21BF59722008FB267 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		835AE9A31BF59722008FB267 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		835AE9A61BF59895008FB267 /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		835AE9A71BF59895008FB267 /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		835AE9A81BF59895008FB267 /* YellowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowViewController.xib; sourceTree = "<group>"; };
+		835AE9AB1BF598A6008FB267 /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		835AE9AC1BF598A6008FB267 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		835AE9AD1BF598A6008FB267 /* RedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedViewController.xib; sourceTree = "<group>"; };
+		835AE9B01BF598B7008FB267 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		835AE9B11BF598B7008FB267 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		835AE9B21BF598B7008FB267 /* BlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueViewController.xib; sourceTree = "<group>"; };
 		83A0707D1BF54DA60041423D /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A070811BF54DA60041423D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83A070831BF54DA60041423D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +92,21 @@
 				83A070971BF54E4C0041423D /* CanvasViewController.h */,
 				83A070981BF54E4C0041423D /* CanvasViewController.m */,
 				83A070991BF54E4C0041423D /* CanvasViewController.xib */,
+				835AE99C1BF57FCA008FB267 /* ClassDemoViewController.h */,
+				835AE99D1BF57FCA008FB267 /* ClassDemoViewController.m */,
+				835AE99E1BF57FCA008FB267 /* ClassDemoViewController.xib */,
+				835AE9A11BF59722008FB267 /* TabBarViewController.h */,
+				835AE9A21BF59722008FB267 /* TabBarViewController.m */,
+				835AE9A31BF59722008FB267 /* TabBarViewController.xib */,
+				835AE9A61BF59895008FB267 /* YellowViewController.h */,
+				835AE9A71BF59895008FB267 /* YellowViewController.m */,
+				835AE9A81BF59895008FB267 /* YellowViewController.xib */,
+				835AE9AB1BF598A6008FB267 /* RedViewController.h */,
+				835AE9AC1BF598A6008FB267 /* RedViewController.m */,
+				835AE9AD1BF598A6008FB267 /* RedViewController.xib */,
+				835AE9B01BF598B7008FB267 /* BlueViewController.h */,
+				835AE9B11BF598B7008FB267 /* BlueViewController.m */,
+				835AE9B21BF598B7008FB267 /* BlueViewController.xib */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -137,8 +177,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835AE9A51BF59722008FB267 /* TabBarViewController.xib in Resources */,
 				83A0709B1BF54E4C0041423D /* CanvasViewController.xib in Resources */,
 				83A070901BF54DA60041423D /* LaunchScreen.storyboard in Resources */,
+				835AE9AF1BF598A6008FB267 /* RedViewController.xib in Resources */,
+				835AE9A01BF57FCA008FB267 /* ClassDemoViewController.xib in Resources */,
+				835AE9AA1BF59895008FB267 /* YellowViewController.xib in Resources */,
+				835AE9B41BF598B7008FB267 /* BlueViewController.xib in Resources */,
 				83A0708D1BF54DA60041423D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835AE9A41BF59722008FB267 /* TabBarViewController.m in Sources */,
+				835AE9AE1BF598A6008FB267 /* RedViewController.m in Sources */,
 				83A070851BF54DA60041423D /* AppDelegate.m in Sources */,
+				835AE9A91BF59895008FB267 /* YellowViewController.m in Sources */,
 				83A070821BF54DA60041423D /* main.m in Sources */,
+				835AE99F1BF57FCA008FB267 /* ClassDemoViewController.m in Sources */,
+				835AE9B31BF598B7008FB267 /* BlueViewController.m in Sources */,
 				83A0709A1BF54E4C0041423D /* CanvasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +345,7 @@
 				83A070961BF54DA60041423D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

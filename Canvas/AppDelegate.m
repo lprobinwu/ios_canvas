@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "CanvasViewController.h"
+#import "ClassDemoViewController.h"
+#import "TabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +24,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UIViewController *vc = [[CanvasViewController alloc] init];
-    self.window.rootViewController = vc;
+    
+    UIViewController *demoVC = [[ClassDemoViewController alloc] init];
+    
+    UIViewController *tabBarVC = [[TabBarViewController alloc]init];
+    
+    self.window.rootViewController = tabBarVC;
     
     [self.window makeKeyAndVisible];
     
