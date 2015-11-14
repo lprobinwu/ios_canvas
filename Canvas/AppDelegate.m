@@ -10,8 +10,12 @@
 #import "CanvasViewController.h"
 #import "ClassDemoViewController.h"
 #import "TabBarViewController.h"
+#import "HamburgerViewController.h"
+#import "MenuViewController.h"
 
 @interface AppDelegate ()
+
+//@property(nonatomic, strong) UIViewController *menuVC;
 
 @end
 
@@ -23,13 +27,29 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIViewController *vc = [[CanvasViewController alloc] init];
+    // Note: different view controllers below are used for testing different behaviors.
     
-    UIViewController *demoVC = [[ClassDemoViewController alloc] init];
+//    UIViewController *vc = [[CanvasViewController alloc] init];
+//    
+//    UIViewController *demoVC = [[ClassDemoViewController alloc] init];
+//    
+//    UIViewController *tabBarVC = [[TabBarViewController alloc]init];
     
-    UIViewController *tabBarVC = [[TabBarViewController alloc]init];
+//    UIViewController *menuVC = [[MenuViewController alloc] init];
     
-    self.window.rootViewController = tabBarVC;
+//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    appDelegate.menuVC = menuVC;
+//
+//    [hamburgerVC setMenuViewController:appDelegate.menuVC];
+    
+    HamburgerViewController *hamburgerVC = [[HamburgerViewController alloc] init];
+    
+    self.window.rootViewController = hamburgerVC;
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MenuViewController *menuVC = (MenuViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    
+    [hamburgerVC setMenuViewController:menuVC];
     
     [self.window makeKeyAndVisible];
     
