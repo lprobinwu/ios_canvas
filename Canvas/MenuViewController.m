@@ -11,6 +11,7 @@
 #import "YellowViewController.h"
 #import "BlueViewController.h"
 
+
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,10 +41,15 @@
     
     self.viewControllers = [NSArray arrayWithObjects:blueNVC, redNVC, yellowNVC, nil];
     
-//    self.currentVC = blueNVC;
-//    self.currentVC.view.frame = self.contentView.bounds;
-//    [self.contentView addSubview:self.currentVC.view];
+    self.hamburgerViewController.contentViewController = blueNVC;
+    
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    self.hamburgerViewController.contentViewController = self.viewControllers[indexPath.row];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

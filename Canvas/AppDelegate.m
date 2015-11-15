@@ -15,8 +15,6 @@
 
 @interface AppDelegate ()
 
-//@property(nonatomic, strong) UIViewController *menuVC;
-
 @end
 
 @implementation AppDelegate
@@ -37,18 +35,17 @@
     
 //    UIViewController *menuVC = [[MenuViewController alloc] init];
     
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    appDelegate.menuVC = menuVC;
-//
 //    [hamburgerVC setMenuViewController:appDelegate.menuVC];
     
     HamburgerViewController *hamburgerVC = [[HamburgerViewController alloc] init];
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:hamburgerVC];
     
     self.window.rootViewController = hamburgerVC;
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MenuViewController *menuVC = (MenuViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
     
+    [menuVC setHamburgerViewController:hamburgerVC];
     [hamburgerVC setMenuViewController:menuVC];
     
     [self.window makeKeyAndVisible];

@@ -52,13 +52,43 @@
     }
 }
 
-// Problem here
 - (void) setMenuViewController:(UIViewController *)menuViewController {
-    self.menuViewController = menuViewController;
+    _menuViewController = menuViewController;
     
     [self.view layoutIfNeeded];
     [self.menuView addSubview:menuViewController.view];
 }
+
+- (void) setContentViewController:(UIViewController *)contentViewController {
+//    UIViewController * oldVC = _contentViewController;
+    
+    _contentViewController = contentViewController;
+    
+    [self.view layoutIfNeeded];
+    
+//    [self hideContentController:oldVC];
+    
+    [self.contentViewController willMoveToParentViewController:self];
+    [self.contentView addSubview:contentViewController.view];
+    [self.contentViewController didMoveToParentViewController:self];
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        // close
+        self.leftMarginConstraint.constant = 0;
+        [self.view layoutIfNeeded];
+    }];
+
+}
+
+- (void) hideContentController:(UIViewController *) content {
+    if (content != nil) {
+        [content willMoveToParentViewController:nil];
+        [content.view removeFromSuperview];
+        [content removeFromParentViewController];
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
